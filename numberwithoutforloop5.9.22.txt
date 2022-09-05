@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int n,m;
+sacnf("%d%d",&n,&m);
+display(n,m);
+}
+void display(n,m)
+{
+if(n>m)
+return;
+else
+printf("%d",n);
+display(n+1,m);
+}
